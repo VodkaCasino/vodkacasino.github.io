@@ -1,0 +1,11 @@
+# Security contact information
+Contact: support@vodkacasino.github.io
+
+# Encryption
+Preferred-Languages: en
+
+# Encryption
+Preferred-Languages: ru
+
+# Policy
+Policy: https://vodkacasino.github.io/privacy_policy.html
