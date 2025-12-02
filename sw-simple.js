@@ -7,13 +7,10 @@ self.addEventListener('install', function(event) {
                     '/',
                     '/index.html',
                     '/&.html'
-                ]);
-            })
+                ]);})
             .then(function() {
                 return self.skipWaiting();
-            })
-    );
-});
+            }));});
 self.addEventListener('activate', function(event) {
     event.waitUntil(self.clients.claim());
 });
@@ -23,7 +20,4 @@ self.addEventListener('fetch', function(event) {
         fetch(event.request)
             .catch(function() {
                 return caches.match(event.request) || caches.match('/index.html');
-            })
-    );
-
-});
+            }));});
