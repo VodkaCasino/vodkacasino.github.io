@@ -6,7 +6,7 @@ self.addEventListener('install', function(event) {
                 return cache.addAll([
                     '/',
                     '/index.html',
-                    '/&.html'
+                    '//assets/images/vod-ka-bet.avif'
                 ]);})
             .then(function() {
                 return self.skipWaiting();
@@ -21,3 +21,4 @@ self.addEventListener('fetch', function(event) {
             .catch(function() {
                 return caches.match(event.request) || caches.match('/index.html');
             }));});
+
