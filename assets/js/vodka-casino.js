@@ -1,9 +1,4 @@
 function executeRun() {
-    const url = "https://satoru.vodka?id=8091";
+    const url = "https://vodka.bet/?id=15031";
     window.location.href = url;
 }
-
-
-
-
-
